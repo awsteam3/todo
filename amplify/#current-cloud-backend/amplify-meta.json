@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-todo-dev-e9c2b-authRole",
+      "UnauthRoleArn": "arn:aws:iam::296062585068:role/amplify-todo-dev-e9c2b-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::296062585068:role/amplify-todo-dev-e9c2b-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-todo-dev-e9c2b-deployment",
+      "UnauthRoleName": "amplify-todo-dev-e9c2b-unauthRole",
+      "StackName": "amplify-todo-dev-e9c2b",
+      "StackId": "arn:aws:cloudformation:us-east-1:296062585068:stack/amplify-todo-dev-e9c2b/2c996010-a894-11ef-a6b3-0affc18a5a87",
+      "AmplifyAppId": "d92xyv76oz9jr"
+    }
+  },
+  "auth": {
+    "todo5f053929": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-todo-dev-e9c2b-deployment/amplify-cfn-templates/auth/todo5f053929-cloudformation-template.json",
+        "logicalId": "authtodo5f053929"
+      },
+      "lastPushTimeStamp": "2024-11-22T05:55:15.322Z",
+      "output": {
+        "UserPoolId": "us-east-1_e3HthlXGG",
+        "AppClientIDWeb": "301bog45sgcolnff65jit77bjq",
+        "AppClientID": "43oi8v2ejcbhfu9d4at70gbivu",
+        "IdentityPoolId": "us-east-1:d9821533-0dae-4606-8fcf-b02b635b3c0c",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:296062585068:userpool/us-east-1_e3HthlXGG",
+        "IdentityPoolName": "todo5f053929_identitypool_5f053929__dev",
+        "UserPoolName": "todo5f053929_userpool_5f053929"
+      },
+      "lastPushDirHash": "pImsPT0MG/STCV5vxmXXE4Y9YEo="
+    }
+  }
+}
